@@ -1,6 +1,6 @@
 import { BadRequestException } from "@nestjs/common";
-import { TasksPaginationType } from "tasks/query-params.dto";
-import { Task } from "tasks/task.model";
+import { TasksPaginationType } from "../query-params.dto";
+import { Task } from "../task.model";
 
 interface Props {
   paginationParams: TasksPaginationType;

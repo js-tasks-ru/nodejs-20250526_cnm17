@@ -1,12 +1,13 @@
-import { Task } from "tasks/task.model";
+import { SortVariant } from "../query-params.dto";
+import { Task } from "../task.model";
 
 interface Props {
-  sortBy: "ASC" | "DESC";
+  sortBy: SortVariant;
   tasks: Task[];
 }
 
 export const getSortedTasks = ({ sortBy, tasks }: Props): Task[] => {
-  const isASC = sortBy === "ASC";
+  const isASC = sortBy === SortVariant.ASC;
 
   return tasks.sort((a, b) => {
     const nameA = a.status.toLowerCase();

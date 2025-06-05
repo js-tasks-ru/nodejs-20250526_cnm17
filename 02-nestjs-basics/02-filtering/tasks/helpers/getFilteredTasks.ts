@@ -1,4 +1,4 @@
-import { Task, TaskStatus } from "tasks/task.model";
+import { Task, TaskStatus } from "../task.model";
 
 interface Props {
   status: TaskStatus;
